@@ -2583,15 +2583,11 @@ form .form-group .form-control {
   @media screen and (max-width: 996px) {
     .outside-p {
       padding-top: 40px;
-      padding-bottom: 56px;
-      padding-right: 39px;
-      padding-left: 39px; } }
+      padding-bottom: 56px; } }
   @media screen and (max-width: 620px) {
     .outside-p {
       padding-top: 32px;
-      padding-bottom: 40px;
-      padding-right: 15px;
-      padding-left: 15px; } }
+      padding-bottom: 40px; } }
 
 .banner {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner.png");
@@ -2826,9 +2822,12 @@ form .form-group .form-control {
   margin-bottom: 20px; }
 
 @media screen and (max-width: 996px) {
-  .connection br {
-    content: "";
-    display: none; } }
+  .connection {
+    padding-right: 120px;
+    padding-left: 120px; }
+    .connection br {
+      content: "";
+      display: none; } }
 
 form {
   max-width: 730px;
