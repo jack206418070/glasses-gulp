@@ -41,8 +41,8 @@
         }
         img{
             flex: 0 0 56.5%;
-            height: 400px;
             object-fit: cover;
+            height: 400px;
             @include pad{
                 flex: 0 0 48%;
                 height: 208px;
@@ -77,6 +77,7 @@
                 h4{
                     font-family: $font-english;
                     font-size: 20px;
+                    line-height: 26px;
                 }
                 @include pad{
                     margin-bottom: 32px;
@@ -100,7 +101,7 @@
             }
             >a{
                 font-family: $font-english;
-                font-size: 48px;
+                font-size: 32px;
                 font-weight: bold;
                 color: #650300;
                 display: block;
