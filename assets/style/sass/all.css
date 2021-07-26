@@ -2846,17 +2846,9 @@ form .form-group .form-control {
   margin-bottom: 20px; }
 
 @media screen and (max-width: 996px) {
-  .connection {
-    padding-right: 159px;
-    padding-left: 159px; }
-    .connection br {
-      content: "";
-      display: none; } }
-
-@media screen and (max-width: 620px) {
-  .connection {
-    padding-right: 15px;
-    padding-left: 15px; } }
+  .connection br {
+    content: "";
+    display: none; } }
 
 form {
   max-width: 730px;
