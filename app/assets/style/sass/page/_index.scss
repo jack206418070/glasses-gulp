@@ -1,6 +1,3 @@
-@import "../utils/variable";
-@import "../utils/mixin";
-
 .outside-p{
     padding-top: 60px;
     padding-bottom: 80px;
@@ -264,16 +261,10 @@
         margin-bottom: 20px;
     }
     @include pad{
-        padding-right: 159px;
-        padding-left: 159px;
         br{
             content: "";
             display: none;
         }
-    }
-    @include mobile{
-        padding-right: 15px;
-        padding-left: 15px;
     }
 }
 
