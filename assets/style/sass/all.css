@@ -3167,9 +3167,9 @@ form {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 56.5%;
               flex: 0 0 56.5%;
-      height: 400px;
       -o-object-fit: cover;
-         object-fit: cover; }
+         object-fit: cover;
+      height: 400px; }
       @media screen and (max-width: 996px) {
         .blog-content li img {
           -webkit-box-flex: 0;
@@ -3213,7 +3213,8 @@ form {
         margin-bottom: 24px; }
         .blog-content li .blog-content-text .h4 h4 {
           font-family: "Roboto", sans-serif;
-          font-size: 20px; }
+          font-size: 20px;
+          line-height: 26px; }
         @media screen and (max-width: 996px) {
           .blog-content li .blog-content-text .h4 {
             margin-bottom: 32px; }
@@ -3232,7 +3233,7 @@ form {
             font-size: 14px; } }
       .blog-content li .blog-content-text > a {
         font-family: "Roboto", sans-serif;
-        font-size: 48px;
+        font-size: 32px;
         font-weight: bold;
         color: #650300;
         display: block;
