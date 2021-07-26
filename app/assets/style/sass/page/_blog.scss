@@ -3,14 +3,7 @@
 
 
 .blog-menu{
-    margin-bottom: 40px;
-    @include pad{
-        padding-left: 39px;
-        padding-right: 47px;
-    }
     @include mobile{
-        padding-left: 0px;
-        padding-right: 0px;
         ul{
             margin: 0 auto;
         }
@@ -31,13 +24,7 @@
 }
 
 .blog{
-    @include pad{
-        padding-left: 39px;
-        padding-right: 47px;
-    }
     @include mobile{
-        padding-left: 15px;
-        padding-right: 15px;
         .title-sm{
             font-size: 28px;
             line-height: 40px;
@@ -60,6 +47,7 @@
         img{
             flex: 0 0 56.5%;
             height: 400px;
+            object-fit: cover;
             @include pad{
                 flex: 0 0 48%;
                 height: 208px;
@@ -115,7 +103,7 @@
                     font-size: 14px;
                 }
             }
-            a{
+            >a{
                 font-family: $font-english;
                 font-size: 48px;
                 font-weight: bold;
@@ -127,21 +115,15 @@
     }
 }
 .special{
-    @include pad{
-        padding-left: 39px;
-        padding-right: 39px;
-    }
     @include mobile{
-        padding-left: 15px;
-        padding-right: 15px;
         .tag{
             font-size: 14px;
         }
     }
     .special-article{
-        flex: 0 0 74%;
+        flex: 0 0 73%;
         @include pad{
-            flex: 0 0 70%;
+            flex: 0 0 65%;
         }
         @include mobile{
             flex: 0 0 100%;
@@ -198,6 +180,7 @@
         img{
             width: 38px;
             height: auto;
+            object-fit: cover;
         }
         p{
             font-size: 28px;

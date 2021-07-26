@@ -56,6 +56,10 @@ $helper-flex:(
     margin-right: auto;
 }
 
+.mt-auto{
+    margin-top: auto;
+}
+
 .mb-0{
     margin-bottom: 0;
 }
@@ -120,7 +124,7 @@ $helper-flex:(
         margin-top: $i * 4 + px;
     }
     .mb-#{$i}{
-        margin-bottom: $i * 4 + px !important;
+        margin-bottom: $i * 4 + px;
     }
     .mr-#{$i}{
         margin-right: $i * 4 + px;
@@ -145,7 +149,7 @@ $helper-flex:(
     padding: 0 !important;
 }
 .mb-0{
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
 }
 
 @include pad{
@@ -158,18 +162,25 @@ $helper-flex:(
     .mb-md-6{
         margin-bottom: 24px !important;
     }
-    .mb-md-6{
+    .mb-md-24{
+        margin-bottom: 96px;
+    }
+    .mt-md-6{
         margin-top: 24px !important;
+    }
+    .mb-md-8{
+        margin-bottom: 32px;
+    }
+    .mb-md-14{
+        margin-bottom: 56px;
     }
     .mb-md-15{
         margin-bottom: 60px !important;
     }
-    .mb-md-24{
-        margin-bottom: 96px !important;
-    }
+
 
     .p-md-0{
-        padding: 0 !important; 
+        padding: 0; 
     }
     .py-md-4{
         padding-top: 16px;
@@ -188,6 +199,12 @@ $helper-flex:(
     }
     .mb-sm-14{
         margin-bottom: 56px !important;
+    }
+    .mb-sm-5{
+        margin-bottom: 20px;
+    }
+    .mb-sm-8{
+        margin-bottom: 32px;
     }
     .m-sm-0{
         margin: 0 !important;
@@ -333,6 +350,9 @@ $helper-flex:(
     }
     &white{
         color: white;
+    }
+    &black{
+        color: black;
     }
     &secondary-dark{
         color: darken($f-color-secondary, 10%);

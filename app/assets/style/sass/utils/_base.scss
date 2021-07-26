@@ -1,5 +1,6 @@
 body{
     line-height: 1.5;
+    font-family: "Noto Sans", sans-serif; 
 }
 
 a{
@@ -10,20 +11,22 @@ a{
 .container{
     max-width: $max-width;
     margin: 0 auto;
-    padding-right: 0px !important;
-    padding-left: 0px !important;
-    @media (max-width:1110px) {
-        padding-right: 15px !important;
-        padding-left: 15px !important;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include pad{
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    @include mobile{
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
 .title-sm{
     color: $f-color-secondary;
     font-size: 48px;
-    font-weight: bold;
     text-align: center;
-    line-height: 70px;
     &.title-sm__white{
         color: #ffffff;
     }

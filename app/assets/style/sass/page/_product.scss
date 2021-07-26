@@ -32,6 +32,7 @@
         }
         @include pad{
             width: 230px;
+            padding: 14px 0;
             img{
                 height: 24px;
                 width: 24px;
@@ -43,9 +44,7 @@
         }
         @include mobile{
             width: 115px;
-            height: 30px;
-            padding: 0 10px;
-            padding-top: 5px;
+            padding: 5px 10px;
             margin: 0;
             img{
                 height: 14px;
@@ -98,12 +97,16 @@
             width: 100%;
             height: 224px;
             vertical-align: middle;
+            object-fit: cover;
         }
         .product-item-text{
             display: flex;
             justify-content: space-between;
             .price{
                 color: $primary;
+            }
+            h3{
+                font-size: 24px;
             }
         }
         .product-item-color{
@@ -123,8 +126,6 @@
     }
     @include pad{
         margin-bottom: 20px;
-        padding-right: 39px;
-        padding-left: 39px;
         .title-sm{
             font-size: 32px;
         }
@@ -145,14 +146,11 @@
     }
     @include mobile{
         margin-bottom: 20px;
-        padding-right: 15px;
-        padding-left: 15px;
         .title-sm{
             font-size: 20px;
         }
         h3{
             font-size: 16px;
-            margin-bottom: 20px;
         }
         li{
             flex: 0 0 100%;
@@ -164,10 +162,17 @@
             .product-item-text{
                 font-size: 16px;
             }
-            .color-one, .color-two{
-                width: 16px;
-                height: 16px;
-                margin-right: 4px;
+            .product-item-text{
+                h3{
+                    font-size: 16px;
+                }
+            }
+            .product-item-color{
+                .color-one, .color-two{
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 4px;
+                }
             }
         }
     }
