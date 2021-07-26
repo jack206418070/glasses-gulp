@@ -2829,6 +2829,11 @@ form .form-group .form-control {
       content: "";
       display: none; } }
 
+@media screen and (max-width: 620px) {
+  .connection {
+    padding-left: 0;
+    padding-right: 0; } }
+
 form {
   max-width: 730px;
   margin: 0 auto; }
