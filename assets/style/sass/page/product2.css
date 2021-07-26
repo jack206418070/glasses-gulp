@@ -21,14 +21,14 @@
     -webkit-box-flex: 0;
         -ms-flex: 0 0 22.5%;
             flex: 0 0 22.5%; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 996px) {
     .product {
       margin-bottom: 20px; }
       .product .product-item li {
         -webkit-box-flex: 0;
             -ms-flex: 0 0 48%;
                 flex: 0 0 48%; } }
-  @media screen and (max-width: 576px) {
+  @media screen and (max-width: 620px) {
     .product .product-item li {
       -webkit-box-flex: 0;
           -ms-flex: 0 0 100%;
