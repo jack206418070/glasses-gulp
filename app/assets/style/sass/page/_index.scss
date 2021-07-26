@@ -4,14 +4,10 @@
     @include pad{
         padding-top: 40px;
         padding-bottom: 56px;
-        padding-right: 39px;
-        padding-left: 39px;
     }
     @include mobile{
         padding-top: 32px;
         padding-bottom: 40px;
-        padding-right: 15px;
-        padding-left: 15px;
     }
 }
 
@@ -261,10 +257,16 @@
         margin-bottom: 20px;
     }
     @include pad{
+        padding-right: 120px;
+        padding-left: 120px;
         br{
             content: "";
             display: none;
         }
+    }
+    @include mobile{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
