@@ -1,10 +1,33 @@
----
-title: 眼鏡-店家資訊
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>眼鏡-店家資訊</title>
+    <link rel="stylesheet" href="./assets/style/sass/all.css">
+    <link rel="stylesheet" href="./assets/style/fontawesome-free-5ul.15.3-web/css/all.css">
+</head>
+<body>
+  <div class="header bg-primary d-flex jy-content-between align-items-center">
+    <a href="index.html"><h1>眼鏡</h1></a>
+    <ul class="menu d-flex">
+        <li>
+            <a href="./product-1.html">系列鏡框</a>
+        </li>
+        <li>
+            <a href="./loctions.html">門市據點</a>
+        </li>
+        <li>
+            <a href="./blog.html">部落格</a>
+        </li>
+        <li>
+            <a href="./question.html">常見問題</a>
+        </li>
+    </ul>
+  </div>
+  
+  
     <div class="loctions">
         <div class="container">
             <h2 class="title-sm title-sm__black text-left bl-primary-2 pl-4 mb-15 mt-15 mt-md-6 mb-md-6">門市據點</h2>
@@ -113,3 +136,61 @@ current: index
             </ul>
         </div>
     </div>
+
+
+  <div class="footer bg-primary">
+    <div class="container">
+        <div class="contact">
+            <div class="contact-group d-flex jy-content-between align-items-center">
+            
+                <ul class="menu d-flex">
+                    <li>
+                        <a href="#">首頁</a>
+                    </li>
+                    <li>
+                        <a href="#">系列鏡框</a>
+                    </li>
+                    <li>
+                        <a href="#">門市據點</a>
+                    </li>
+                    <li>
+                        <a href="#">部落格</a>
+                    </li>
+                    <li>
+                        <a href="#">常見問題</a>
+                    </li>
+                </ul>
+                <ul class="icon-group d-flex">
+                    <li><a class="mr-8" href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-fb.svg" alt="facebook"></a></li>
+                    <li><a class="mr-8" href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-ig.svg" alt="ig"></a></li>
+                    <li><a  href="#"><img src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-line.svg" alt="line"></a></li>
+                </ul>
+            </div>
+            <ul class="contact-item mb-6">
+                <li>
+                    <img class="mr-6" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-phone.svg" alt="tel">
+                    <a href="#">0800-000-000</a>
+                </li>
+                <li>
+                    <img class="mr-4" src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-mail.svg" alt="email">
+                    <a href="#">glasses@business.com</a>
+                </li>
+            </ul>
+        </div>
+        
+        <ul class="copyRight d-flex jy-content-between align-items-center text-c-white">
+            <li>
+                <p class="f-size-base">Copyright © 2020 Glasses.All rights reserved.</p>
+            </li>
+            <li class="copyRight__rule d-flex">
+                <p>隱私權政策</p>
+                <p class="ml-12 ml-md-6">服務條款</p>
+            </li>
+        </ul>
+    </div>
+  </div>
+  <script src="./assets/js/vendors.js"></script>
+</body>
+
+
+</html>

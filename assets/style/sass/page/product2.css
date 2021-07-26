@@ -1,0 +1,37 @@
+@charset "UTF-8";
+/* circle write */
+/* 圖片取代文字 */
+/* bg setting */
+/* RWD mixin */
+.product-banner .banner-one {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.product-banner .banner-two {
+  background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.product {
+  margin-bottom: -10px; }
+  .product .product-item li {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 22.5%;
+            flex: 0 0 22.5%; }
+  @media screen and (max-width: 768px) {
+    .product {
+      margin-bottom: 20px; }
+      .product .product-item li {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 48%;
+                flex: 0 0 48%; } }
+  @media screen and (max-width: 576px) {
+    .product .product-item li {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 100%;
+              flex: 0 0 100%; } }
+
+/*# sourceMappingURL=product2.css.map */
