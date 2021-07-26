@@ -6,6 +6,21 @@
     @include mobile{
         margin-bottom: 40px;
     }
+    .location-content{
+        margin-right: -15px;
+        margin-left: -15px;
+        .location-item{
+            flex: 0 0 33.3333%;
+            padding-right: 15px;
+            padding-left: 15px;
+            @include pad{
+                flex: 0 0 50%;
+            }
+            @include mobile{
+                flex: 0 0 100%;
+            }
+        }
+    }
     .select-block{
         display: flex;
         align-items: center;

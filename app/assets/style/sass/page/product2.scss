@@ -13,14 +13,14 @@
     margin-bottom: -10px;
     .product-item{
         li{
-            flex: 0 0 22.5%;
+            flex: 0 0 25%;
         }
     }
     @include pad{
         margin-bottom: 20px;
         .product-item{
             li{
-                flex: 0 0 48%;
+                flex: 0 0 50%;
             }
         }
     }
