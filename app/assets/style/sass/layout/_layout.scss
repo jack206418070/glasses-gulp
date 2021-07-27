@@ -25,7 +25,14 @@
         padding-right: 0px;
         .menu{
             a{
-                padding: 40px;
+                padding: 40px 40px;
+            }
+        }
+    }
+    @media (max-width: 768px) {
+        .menu{
+            a{
+                padding: 40px 24px;
             }
         }
     }
@@ -118,6 +125,9 @@
                 font-size: $font-base;
                 margin-right: 40px;
             }
+            @media (max-width: 768px) {
+                margin-right: 25px;
+            }
             @include mobile{
                 display: none;
             }
@@ -129,6 +139,9 @@
             &:hover{
                 opacity: 0.5;
             }
+        }
+        img{
+            vertical-align: middle;
         }
         @include pad{
             img{
@@ -147,6 +160,9 @@
     }
     li{
         margin-bottom: 16px;
+        &:nth-child(2){
+            margin-bottom: 0;
+        }
     }
 
     img, a{

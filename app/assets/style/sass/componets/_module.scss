@@ -43,8 +43,6 @@
 .card{
     margin-bottom: 32px;
     border: 1px solid #DCDCDC;
-    margin-right: 1.8%;
-    flex: 0 0 31.5%;
     img{
         vertical-align: middle;
         height: 224px;
@@ -57,8 +55,6 @@
     }
     @include pad{
         margin-bottom: 20px;
-        margin-right: 2%;
-        flex: 0 0 48%;
         .card-title{
             font-size: 16px;
             padding: 8px 0 8px 24px;
@@ -66,7 +62,6 @@
     }
     @include mobile{
         margin-bottom: 16px;
-        flex: 0 0 100%;
     }
     .card-body{
         font-size: 20px;
