@@ -2230,11 +2230,7 @@ a {
 /* card set */
 .card {
   margin-bottom: 32px;
-  border: 1px solid #DCDCDC;
-  margin-right: 1.8%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 31.5%;
-          flex: 0 0 31.5%; }
+  border: 1px solid #DCDCDC; }
   .card img {
     vertical-align: middle;
     height: 224px;
@@ -2245,20 +2241,13 @@ a {
     border-bottom: 1px solid #DCDCDC; }
   @media screen and (max-width: 996px) {
     .card {
-      margin-bottom: 20px;
-      margin-right: 2%;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 48%;
-              flex: 0 0 48%; }
+      margin-bottom: 20px; }
       .card .card-title {
         font-size: 16px;
         padding: 8px 0 8px 24px; } }
   @media screen and (max-width: 620px) {
     .card {
-      margin-bottom: 16px;
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 100%;
-              flex: 0 0 100%; } }
+      margin-bottom: 16px; } }
   .card .card-body {
     font-size: 20px;
     padding: 16px 24px 16px 24px; }
@@ -2431,7 +2420,10 @@ form .form-group .form-control {
       padding-left: 40px;
       padding-right: 0px; }
       .header .menu a {
-        padding: 40px; } }
+        padding: 40px 40px; } }
+  @media (max-width: 768px) {
+    .header .menu a {
+      padding: 40px 24px; } }
   @media screen and (max-width: 620px) {
     .header {
       -ms-flex-wrap: wrap;
@@ -2528,6 +2520,9 @@ form .form-group .form-control {
       .contact-group .menu a {
         font-size: 16px;
         margin-right: 40px; } }
+    @media (max-width: 768px) {
+      .contact-group .menu a {
+        margin-right: 25px; } }
     @media screen and (max-width: 620px) {
       .contact-group .menu a {
         display: none; } }
@@ -2537,6 +2532,8 @@ form .form-group .form-control {
     transition: 0.3s; }
     .contact-group .icon-group a:hover {
       opacity: 0.5; }
+  .contact-group .icon-group img {
+    vertical-align: middle; }
   @media screen and (max-width: 996px) {
     .contact-group .icon-group img {
       width: 24px;
@@ -2555,6 +2552,8 @@ form .form-group .form-control {
 
 .contact-item li {
   margin-bottom: 16px; }
+  .contact-item li:nth-child(2) {
+    margin-bottom: 0; }
 
 .contact-item img, .contact-item a {
   vertical-align: middle; }
