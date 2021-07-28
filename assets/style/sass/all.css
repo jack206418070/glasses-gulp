@@ -2718,6 +2718,8 @@ form .form-group .form-control {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; }
+  .design li {
+    position: relative; }
   .design .cover {
     background: #ffffff;
     opacity: 0.7;
