@@ -3,6 +3,7 @@
 /* 圖片取代文字 */
 /* bg setting */
 /* RWD mixin */
+/* create m-* p-* and rwd */
 .product-banner .banner-one {
   background-image: url("https://hexschool.github.io/webLayoutTraining1st/week3/banner-1.png");
   background-size: cover;
@@ -16,7 +17,7 @@
   background-position: center center; }
 
 .product {
-  margin-bottom: -10px; }
+  margin-bottom: -8px; }
   .product .product-item li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
