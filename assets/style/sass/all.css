@@ -6734,14 +6734,16 @@ form {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-wrap: wrap;
-            flex-wrap: wrap; } }
+            flex-wrap: wrap;
+        width: 70%; } }
     .tag-group .tag-group-content li {
-      margin-bottom: 8px; }
-      .tag-group .tag-group-content li:nth-child(odd) {
-        margin-right: 24px; }
+      margin-bottom: 8px;
+      margin-right: 24px; }
       @media screen and (max-width: 620px) {
         .tag-group .tag-group-content li {
-          margin-right: 16px; } }
+          margin-right: 8px; }
+          .tag-group .tag-group-content li:nth-child(odd) {
+            margin-right: 8px; } }
       .tag-group .tag-group-content li p {
         margin-right: 16px; }
         @media screen and (max-width: 620px) {
