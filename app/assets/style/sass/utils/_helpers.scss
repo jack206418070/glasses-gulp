@@ -1,25 +1,17 @@
-$helper-sizes:(
-    'xxs': 5px,
-    'xs': 10px,
-    's': 20px,
-    'm': 35px,
-    'l': 50px,
-    'xl': 100px
-);
-
-$helper-flex:(
-    'center':  center,
-    'between': space-between,
-    'around': space-around,
-    'start': flex-start,
-    'end': flex-end,
-    'stretch': stretch,
-    'baseline': baseline
-);
-
-
 /* margin set */
-
+.m-auto{
+    margin: auto;
+}
+.mx-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+.mr-auto{
+    margin-right: auto;
+}
+.mt-auto{
+    margin-top: auto;
+}
 @each $key, $value in $helper-sizes{
     .mt-#{$key}{
         margin-top: $value;
@@ -42,31 +34,11 @@ $helper-flex:(
         margin-left: $value;
     }
 }
+@include createSpace("m",40);
 
-.m-auto{
-    margin: auto;
-}
-
-.mx-auto{
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.mr-auto{
-    margin-right: auto;
-}
-
-.mt-auto{
-    margin-top: auto;
-}
-
-.mb-0{
-    margin-bottom: 0;
-}
 
 
 /* padding set */
-
 @each $key, $value in $helper-sizes{
     .pt-#{$key}{
         padding-top: $value;
@@ -92,124 +64,10 @@ $helper-flex:(
         padding: $value;
     }
 }
-
-@for $i from 1 through 20{
-    .pt-#{$i}{
-        padding-top: $i * 4 + px;
-    }
-    .pb-#{$i}{
-        padding-bottom: $i * 4 + px;
-    }
-    .pr-#{$i}{
-        padding-right: $i * 4 + px;
-    }
-    .pl-#{$i}{
-        padding-left: $i * 4 + px;
-    }
-    .py-#{$i}{
-        padding-top: $i * 4 + px;
-        padding-bottom: $i * 4 + px;
-    }
-    .px-#{$i}{
-        padding-left: $i * 4 + px;
-        padding-right: $i * 4 + px;
-    }
-    .p-#{$i}{
-        padding: $i * 4 + px;
-    }
-}
-
-@for $i from 1 through 40{
-    .mt-#{$i}{
-        margin-top: $i * 4 + px;
-    }
-    .mb-#{$i}{
-        margin-bottom: $i * 4 + px;
-    }
-    .mr-#{$i}{
-        margin-right: $i * 4 + px;
-    }
-    .ml-#{$i}{
-        margin-left: $i * 4 + px;
-    }
-    .my-#{$i}{
-        margin-top: $i * 4 + px;
-        margin-bottom: $i * 4 + px;
-    }
-    .mx-#{$i}{
-        margin-left: $i * 4 + px;
-        margin-right: $i * 4 + px;
-    }
-    .m-#{$i}{
-        margin: $i * 4 + px;
-    }
-}
-
-.p-0{
-    padding: 0 !important;
-}
-.mb-0{
-    margin-bottom: 0;
-}
-
-@include pad{
-    .mr-md-0{
-        margin-right: 0 !important;
-    }
-    .mr-md-8{
-        margin-right: 32px;
-    }
-    .mb-md-6{
-        margin-bottom: 24px !important;
-    }
-    .mb-md-24{
-        margin-bottom: 96px;
-    }
-    .mt-md-6{
-        margin-top: 24px !important;
-    }
-    .mb-md-8{
-        margin-bottom: 32px;
-    }
-    .mb-md-14{
-        margin-bottom: 56px;
-    }
-    .mb-md-15{
-        margin-bottom: 60px !important;
-    }
+@include createSpace("p",40);
 
 
-    .p-md-0{
-        padding: 0; 
-    }
-    .py-md-4{
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-}
-@include mobile{
-    .mr-sm-0{
-        margin-right: 0 !important;
-    }
-    .mr-sm-1{
-        margin-right: 4px !important;
-    }
-    .mb-sm-7{
-        margin-bottom: 28px !important;
-    }
-    .mb-sm-14{
-        margin-bottom: 56px !important;
-    }
-    .mb-sm-5{
-        margin-bottom: 20px;
-    }
-    .mb-sm-8{
-        margin-bottom: 32px;
-    }
-    .m-sm-0{
-        margin: 0 !important;
-    }
-}
+
 
 
 /* dispay set */

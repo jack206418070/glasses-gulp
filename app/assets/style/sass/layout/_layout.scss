@@ -69,6 +69,7 @@
         padding-top: 38px;
     }
     @include mobile{
+        padding: 25px 0;
         .contact{
             display: flex;
             justify-content: space-between;
@@ -78,8 +79,8 @@
     }
     .copyRight{
         border-top: 1px solid $white;
-        padding: 39px 0 ;
         font-size: $font-xs;
+        padding-top: 40px;
         @include pad{
             p{  
                 font-size: 14px;

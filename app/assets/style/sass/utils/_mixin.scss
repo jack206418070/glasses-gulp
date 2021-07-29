@@ -39,8 +39,6 @@
 }
 
 
-
-
 /* RWD mixin */
 
 @mixin pad {
@@ -54,3 +52,90 @@
         @content
     }
 };
+
+
+/* create m-* p-* and rwd */ 
+
+@mixin createSpace($type, $count) {
+    @for $i from 0 through $count{
+        .#{$type}t-#{$i}{
+            margin-top: $i * 4 + px;
+        }
+        .#{$type}b-#{$i}{
+            margin-bottom: $i * 4 + px;
+        }
+        .#{$type}r-#{$i}{
+            margin-right: $i * 4 + px;
+        }
+        .#{$type}l-#{$i}{
+            margin-left: $i * 4 + px;
+        }
+        .#{$type}y-#{$i}{
+            margin-top: $i * 4 + px;
+            margin-bottom: $i * 4 + px;
+        }
+        .#{$type}x-#{$i}{
+            margin-left: $i * 4 + px;
+            margin-right: $i * 4 + px;
+        }
+        .#{$type}-#{$i}{
+            margin: $i * 4 + px;
+        }
+    }
+
+    @for $i from 0 through $count{
+        @include pad{
+            .#{$type}t-md-#{$i}{
+                margin-top: $i * 4 + px;
+            }
+            .#{$type}b-md-#{$i}{
+                margin-bottom: $i * 4 + px;
+            }
+            .#{$type}r-md-#{$i}{
+                margin-right: $i * 4 + px;
+            }
+            .#{$type}l-md-#{$i}{
+                margin-left: $i * 4 + px;
+            }
+            .#{$type}y-md-#{$i}{
+                margin-top: $i * 4 + px;
+                margin-bottom: $i * 4 + px;
+            }
+            .#{$type}x-md-#{$i}{
+                margin-left: $i * 4 + px;
+                margin-right: $i * 4 + px;
+            }
+            .#{$type}-md-#{$i}{
+                margin: $i * 4 + px;
+            }
+        }
+    }
+
+    @for $i from 0 through $count{
+        @include mobile{
+            .#{$type}t-sm-#{$i}{
+                margin-top: $i * 4 + px;
+            }
+            .#{$type}b-sm-#{$i}{
+                margin-bottom: $i * 4 + px;
+            }
+            .#{$type}r-sm-#{$i}{
+                margin-right: $i * 4 + px;
+            }
+            .#{$type}l-sm-#{$i}{
+                margin-left: $i * 4 + px;
+            }
+            .#{$type}y-sm-#{$i}{
+                margin-top: $i * 4 + px;
+                margin-bottom: $i * 4 + px;
+            }
+            .#{$type}x-sm-#{$i}{
+                margin-left: $i * 4 + px;
+                margin-right: $i * 4 + px;
+            }
+            .#{$type}-sm-#{$i}{
+                margin: $i * 4 + px;
+            }
+        }
+    }
+}

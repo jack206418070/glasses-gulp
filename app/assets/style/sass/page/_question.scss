@@ -17,8 +17,6 @@
         }
     }
     @include pad{
-        padding-right: 39px;
-        padding-left: 39px;
         margin-bottom: 72px;
         .title-sm{
             margin-bottom: 40px;
@@ -29,8 +27,6 @@
         }
     }
     @include mobile{
-        padding-right: 15px;
-        padding-left: 15px;
         margin-bottom: 60px;
         .title-sm{
             margin-bottom: 24px;

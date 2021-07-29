@@ -165,7 +165,6 @@
 .tag-group{
     flex: 0 0 24%;
     margin-top: 78px;
-    padding-left: 20px;
     @include mobile{
         margin: 0;
         padding: 0;
@@ -185,6 +184,12 @@
     .tag-group-content{
         font-size: $font-s;
         color: $f-color-primary;
+        a{
+            color:inherit;
+            &:hover{
+                color: lighten($f-color-primary, 10%)
+            }
+        }
         @include pad{
             font-size: $font-base;
         }
@@ -193,10 +198,12 @@
             flex-wrap: wrap;
         }
         li{
-            display: flex;
             margin-bottom: 8px;
+            &:nth-child(odd){
+                margin-right: 24px;
+            }
             @include mobile{
-                flex: 0 0 30%;
+                margin-right: 16px;
             }
             p{
                 margin-right: 16px;
