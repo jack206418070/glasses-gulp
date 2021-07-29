@@ -196,14 +196,16 @@
         @include mobile{
             display: flex;
             flex-wrap: wrap;
+            width: 70%;
         }
         li{
             margin-bottom: 8px;
-            &:nth-child(odd){
-                margin-right: 24px;
-            }
+            margin-right: 24px;
             @include mobile{
-                margin-right: 16px;
+                &:nth-child(odd){
+                    margin-right: 8px;
+                }
+                margin-right: 8px;
             }
             p{
                 margin-right: 16px;
