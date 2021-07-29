@@ -34,7 +34,7 @@
         margin-left: $value;
     }
 }
-@include createSpace("m",40);
+@include createSpace("m",40, margin);
 
 
 
@@ -64,7 +64,7 @@
         padding: $value;
     }
 }
-@include createSpace("p",40);
+@include createSpace("p",40,"padding");
 
 
 
