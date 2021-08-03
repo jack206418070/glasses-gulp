@@ -6012,8 +6012,7 @@ form .form-group .form-control {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 840px;
-  font-family: "Noto Sans", sans-serif; }
+  height: 840px; }
   @media screen and (max-width: 620px) {
     .banner {
       height: 394px; } }
@@ -6135,7 +6134,7 @@ form .form-group .form-control {
     position: relative; }
   .design .cover {
     background: #ffffff;
-    opacity: 0.7;
+    opacity: 0.5;
     position: absolute;
     height: 455px;
     width: 100%; }
@@ -6448,52 +6447,53 @@ form {
           height: 16px;
           margin-right: 4px; } }
 
-.loctions {
-  margin-bottom: 128px; }
-  @media screen and (max-width: 996px) {
-    .loctions {
-      margin-bottom: 108px; } }
-  @media screen and (max-width: 620px) {
-    .loctions {
-      margin-bottom: 40px; } }
-  .loctions .location-content {
-    margin-right: -15px;
-    margin-left: -15px; }
-    .loctions .location-content .location-item {
-      -webkit-box-flex: 0;
-          -ms-flex: 0 0 33.3333%;
-              flex: 0 0 33.3333%;
-      padding-right: 15px;
-      padding-left: 15px; }
-      @media screen and (max-width: 996px) {
-        .loctions .location-content .location-item {
-          -webkit-box-flex: 0;
-              -ms-flex: 0 0 50%;
-                  flex: 0 0 50%; } }
-      @media screen and (max-width: 620px) {
-        .loctions .location-content .location-item {
-          -webkit-box-flex: 0;
-              -ms-flex: 0 0 100%;
-                  flex: 0 0 100%; } }
-  .loctions .select-block {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .loctions .select-block label {
-      font-size: 24px; }
-    .loctions .select-block select {
-      width: 324px;
-      height: 45px; }
+@media screen and (max-width: 996px) {
+  .loctions {
+    margin-bottom: 108px; } }
+
+@media screen and (max-width: 620px) {
+  .loctions {
+    margin-bottom: 40px; } }
+
+.loctions .location-content {
+  margin-right: -15px;
+  margin-left: -15px; }
+  .loctions .location-content .location-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.3333%;
+            flex: 0 0 33.3333%;
+    padding-right: 15px;
+    padding-left: 15px; }
+    @media screen and (max-width: 996px) {
+      .loctions .location-content .location-item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%; } }
     @media screen and (max-width: 620px) {
-      .loctions .select-block label {
-        font-size: 14px; }
-      .loctions .select-block select {
-        margin-left: 12px;
-        width: 277px;
-        height: 36px; } }
+      .loctions .location-content .location-item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%; } }
+
+.loctions .select-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .loctions .select-block label {
+    font-size: 24px; }
+  .loctions .select-block select {
+    width: 324px;
+    height: 45px; }
+  @media screen and (max-width: 620px) {
+    .loctions .select-block label {
+      font-size: 14px; }
+    .loctions .select-block select {
+      margin-left: 12px;
+      width: 277px;
+      height: 36px; } }
 
 .map .map-img {
   -webkit-box-flex: 0;
@@ -6597,13 +6597,13 @@ form {
           width: 100%; } }
     .blog-content li .blog-content-text {
       -webkit-box-flex: 0;
-          -ms-flex: 0 0 40.5%;
-              flex: 0 0 40.5%; }
+          -ms-flex: 0 1 40.5%;
+              flex: 0 1 40.5%; }
       @media screen and (max-width: 996px) {
         .blog-content li .blog-content-text {
           -webkit-box-flex: 0;
-              -ms-flex: 0 0 48.5%;
-                  flex: 0 0 48.5%; } }
+              -ms-flex: 0 1 48.5%;
+                  flex: 0 1 48.5%; } }
       .blog-content li .blog-content-text h3 {
         font-size: 32px;
         color: #650300;
