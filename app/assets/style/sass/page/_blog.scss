@@ -54,9 +54,9 @@
             }
         }
         .blog-content-text{
-            flex: 0 0 40.5%;
+            flex: 0 1 40.5%;
             @include pad{
-                flex: 0 0 48.5%;
+                flex: 0 1 48.5%;
             }
             h3{
                 font-size: 32px;
