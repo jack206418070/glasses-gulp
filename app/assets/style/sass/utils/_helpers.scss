@@ -1,241 +1,3 @@
-/* margin set */
-.m-auto{
-    margin: auto;
-}
-.mx-auto{
-    margin-right: auto;
-    margin-left: auto;
-}
-.mr-auto{
-    margin-right: auto;
-}
-.mt-auto{
-    margin-top: auto;
-}
-@each $key, $value in $helper-sizes{
-    .mt-#{$key}{
-        margin-top: $value;
-    }
-    .mb-#{$key}{
-        margin-bottom: $value !important;
-    }
-    .mr-#{$key}{
-        margin-right: $value;
-    }
-    .ml-#{$key}{
-        margin-left: $value;
-    }
-    .my-#{$key}{
-        margin-top: $value !important;
-        margin-bottom: $value !important;
-    }
-    .mx-#{$key}{
-        margin-right: $value;
-        margin-left: $value;
-    }
-}
-@include createSpace("m",40, margin);
-
-
-
-/* padding set */
-@each $key, $value in $helper-sizes{
-    .pt-#{$key}{
-        padding-top: $value;
-    }
-    .pb-#{$key}{
-        padding-bottom: $value;
-    }
-    .pr-#{$key}{
-        padding-right: $value;
-    }
-    .pl-#{$key}{
-        padding-left: $value;
-    }
-    .py-#{$key}{
-        padding-top: $value;
-        padding-bottom: $value;
-    }
-    .px-#{$key}{
-        padding-left: $value;
-        padding-right: $value;
-    }
-    .p-#{$key}{
-        padding: $value;
-    }
-}
-@include createSpace("p",40,"padding");
-
-
-
-
-
-/* dispay set */
-.d-block{
-    display: block;
-}
-
-.d-none{
-    display: none;
-}
-
-.d-inline-block{
-    display: inline-block;
-}
-
-@include pad{
-    .d-md-block{
-        display: block !important;
-    }
-    .d-md-none{
-        display: none !important;
-    }
-    .d-md-flex{
-        display: flex;
-    }
-}
-
-@include mobile{
-    .d-sm-block{
-        display: block !important;
-    }
-    .d-sm-none{
-        display: none !important;
-    }
-}
-
-
-.d-flex{
-    display: flex;
-    &.flex-wrap{
-        flex-wrap: wrap;
-    }
-}
-
-@each $key, $value in $helper-flex {
-    .jy-content-#{$key}{
-        justify-content: $value;
-    }
-    .align-items-#{$key}{
-        align-items: $value;
-    }
-    .align-self-#{$key}{
-        align-self: $value;
-    }
-}
-
-.flex-wrap{
-    flex-wrap: wrap;
-}
-
-.flex-set-40{
-    flex: 0 0 40% !important;
-}
-.flex-set-50{
-    flex: 0 0 50% !important;
-}
-
-
-.flex-d-rr{
-    flex-direction: row-reverse;
-}
-
-.flex-dir-col{
-    flex-direction: column;
-}
-
-.flex-md-col-reverse{
-    @include mobile{
-        flex-direction: column-reverse;
-    }
-}
-
-.order-1{
-    order: 1;
-}
-.order-2{
-    order: 2;
-}
-.order-3{
-    order: 3;
-}
-@include pad{
-    .order-md-1{
-        order: 1;
-    }
-    .order-md-2{
-        order: 2;
-    }
-    .order-md-3{
-        order: 3;
-    }
-}
-@include mobile{
-    .order-sm-1{
-        order: 1;
-    }
-    .order-sm-2{
-        order: 2;
-    }
-    .order-sm-3{
-        order: 3;
-    }
-}
-
-/* text set */
-
-.text-{
-    &right{
-        text-align: right;
-    }
-    &center{
-        text-align: center;
-    }
-    &left{
-        text-align: left;
-    }
-}
-
-
-/* text set */
-
-.text-c-{
-    &primary{
-        color: $f-color-primary;
-    }
-    &secondary{
-        color: $f-color-secondary;
-    }
-    &white{
-        color: white;
-    }
-    &black{
-        color: black;
-    }
-    &secondary-dark{
-        color: darken($f-color-secondary, 10%);
-    }
-    &thirdary{
-        color: $thirdary;
-    }
-    &thirdary-dark{
-        color: darken($thirdary, 30%);
-    }
-    &forthary{
-        color: $secondary;
-    }
-}
-
-.text-ver-lr{
-    writing-mode: vertical-lr;
-}
-.text-ver-rl{
-    writing-mode: vertical-rl;
-}
-
-
-
-
 /* bg-color */
 .bg-{
     &primary{
@@ -316,22 +78,6 @@
     }
 }
 
-/* font-style */
-.f-f-en{
-    font-family: $font-english;
-}
-
-.f-f-ch{
-    font-family: $font-chinese;
-}
-
-.f-w-bold{
-    font-weight: bold;
-}
-
-.f-w-600{
-    font-weight: 600;
-}
 
 
 
@@ -345,19 +91,7 @@
 
 
 
-/* text address set */
 
-.text-center{
-    text-align: center;
-}
-
-.text-right{
-    text-align: right;
-}
-
-.text-left{
-    text-align: left;
-}
 
 /* postion */
 .p-relative{
@@ -406,21 +140,40 @@
 /* f-size set */
 
 .f-size-base{
-    font-size: $font-base;
+    font-size: $fs-base;
 }
 
 .f-size-xs{
-    font-size: $font-xs;
+    font-size: $fs-xs;
 }
 
 .f-size-s{
-    font-size: $font-s;
+    font-size: $fs-s;
 }
 
 .f-size-m{
-    font-size: $font-m;
+    font-size: $fs-m;
 }
 
 .f-size-l{
-    font-size: $font-l;
+    font-size: $fs-l;
+}
+
+
+
+/* font-style */
+.f-f-en{
+    font-family: $ff-english;
+}
+
+.f-f-ch{
+    font-family: $ff-chinese;
+}
+
+.f-w-bold{
+    font-weight: bold;
+}
+
+.f-w-600{
+    font-weight: 600;
 }

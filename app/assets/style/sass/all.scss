@@ -1,12 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
 @import "./utils/variable";
-@import "./layout/reset";
 @import "./utils/mixin";
-@import "./utils/base";
+@import "./utils/space";
+@import "./utils/display";
+@import "./utils/textSet";
 @import "./utils/helpers";
-@import "./componets/module";
+
+
+@import "./layout/reset";
+@import "./layout/base";
 @import "./layout/layout";
 
-@import "./page/main";
+@import "./componets/btn";
+@import "./componets/card";
+@import "./componets/pagination";
+@import "./componets/form";
+
+
+@import "./page/index";
+@import "./page/product";
+@import "./page/loctions";
+@import "./page/blog";
+@import "./page/question";

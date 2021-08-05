@@ -1,0 +1,25 @@
+/* form set */
+form{
+    .form-group{
+        .checkbox{
+            width: 24px;
+            height: 24px;
+            border: none;
+            margin: 0;
+        }
+        .form-control{
+            padding: 16px 20px;
+            width: 100%;
+            font-size: 22px;
+            border: none;
+            border-radius: 0;
+            color: darken($thirdary, 40%);
+            &:focus{
+                outline: none;
+            }
+            @include mobile{
+                font-size: 16px;
+            }
+        }
+    }
+}

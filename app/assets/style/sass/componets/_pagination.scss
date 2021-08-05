@@ -1,0 +1,39 @@
+/* pagination set */
+.pagination{
+    .pagination-item{
+        display: flex;
+        justify-content: center;
+        a{
+            display: block;
+            padding: 12px 16px;
+            font-size: 18px;
+            color: #000000;
+            border: 1px solid #555555;
+            border-right: 0px;
+            &:hover,&.active{
+                background-color: #000000;
+                color: $white;
+            }
+            @include mobile{
+                font-size: 14px;
+            }
+        }
+        li:last-child{
+            a{
+                border-right: 1px solid #555555;
+                &:hover,&.active{
+                    background-color: #F2F2F2;
+                    color: #000000;
+                }
+            }
+        }
+        li:first-child{
+            a{
+                &:hover,&.active{
+                    background-color: #F2F2F2;
+                    color: #000000;
+                }
+            }
+        }
+    }
+}

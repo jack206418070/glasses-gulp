@@ -1,3 +1,40 @@
+.container{
+    max-width: $max-width;
+    margin: 0 auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    @include pad{
+        max-width: 996px;
+        padding-right: 39px;
+        padding-left: 39px;
+    }
+    @include mobile{
+        max-width: 620px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+
+.title-sm{
+    color: $f-color-secondary;
+    font-size: 48px;
+    &.title-sm__white{
+        color: #ffffff;
+    }
+    &.title-sm__black{
+        color: #000000;
+    }
+    @include pad{
+        font-size: 32px;
+    }
+    @include mobile{
+        font-size: 24px;
+    }
+}
+
+
 .header{
     height: 108px;
     padding-right: 56px;
@@ -11,10 +48,10 @@
         a{
             color:$white;
             text-decoration: none;
-            font-family: $font-chinese;
+            font-family: $ff-chinese;
             display: block;
             padding: 40px 32px;
-            font-size: $font-xs;
+            font-size: $fs-xs;
             &:hover{
                 color: #000000;
             }
@@ -55,7 +92,7 @@
                     padding: 8px 0;
                     text-align: center;
                     margin: 0;
-                    font-size: $font-xs;
+                    font-size: $fs-xs;
                     vertical-align: middle;
                 }
             }
@@ -79,7 +116,7 @@
     }
     .copyRight{
         border-top: 1px solid $white;
-        font-size: $font-xs;
+        font-size: $fs-xs;
         padding-top: 40px;
         @include pad{
             p{  
@@ -114,15 +151,15 @@
         a{
             color:$white;
             text-decoration: none;
-            font-family: $font-chinese;
+            font-family: $ff-chinese;
             display: block;
             margin-right: 48px;
-            font-size: $font-xs;
+            font-size: $fs-xs;
             &:hover{
                 color: #000000;
             }
             @include pad{
-                font-size: $font-base;
+                font-size: $fs-base;
                 margin-right: 40px;
             }
             @media (max-width: 768px) {
@@ -183,16 +220,16 @@
     }
 
     a{
-        font-family: $font-english;
+        font-family: $ff-english;
         font-weight: normal !important;
-        font-size: $font-m;
+        font-size: $fs-m;
         color:$white;
         text-decoration: none;
         @include pad{
-            font-size: $font-xs;
+            font-size: $fs-xs;
         }
         @include mobile{
-            font-size: $font-base;
+            font-size: $fs-base;
         }
     }
 }

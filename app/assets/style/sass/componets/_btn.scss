@@ -1,0 +1,37 @@
+/* btn set */
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    &:hover{
+        background-color: $secondary;
+        color: $white;
+        font-weight: 900;
+    }
+    &.hover-primary{
+        &:hover{
+            background-color: $primary;
+            color: #000000;
+            font-weight: 900;
+        }
+    }
+}
+
+
+/* btn color */
+.btn-primary{
+    background-color: $primary;
+}
+.btn-secondary{
+    background-color: $secondary;
+}
+.btn-thirdary{
+    background-color: $thirdary;
+}
+
+/* btn-size */
+.btn-m{
+    width: 33%;
+}

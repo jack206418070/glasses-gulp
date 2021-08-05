@@ -75,7 +75,7 @@
                 align-items: center;
                 margin-bottom: 24px;
                 h4{
-                    font-family: $font-english;
+                    font-family: $ff-english;
                     font-size: 20px;
                     line-height: 26px;
                 }
@@ -100,7 +100,7 @@
                 }
             }
             >a{
-                font-family: $font-english;
+                font-family: $ff-english;
                 font-size: 32px;
                 font-weight: bold;
                 color: #650300;
@@ -152,9 +152,9 @@
             }
             p{
                 color: #0A0A0A;
-                font-size: $font-xs;
+                font-size: $fs-xs;
                 @include mobile{
-                    font-size: $font-base;
+                    font-size: $fs-base;
                 }
             }
             
@@ -182,7 +182,7 @@
         }
     }
     .tag-group-content{
-        font-size: $font-s;
+        font-size: $fs-s;
         color: $f-color-primary;
         a{
             color:inherit;
@@ -191,7 +191,7 @@
             }
         }
         @include pad{
-            font-size: $font-base;
+            font-size: $fs-base;
         }
         @include mobile{
             display: flex;
